@@ -1,13 +1,13 @@
-m = 0
-n = 1
+m = 1
+n = 2
+x = 0
+y = 2
+while(n, 4000000)
 
-for: i in range(1, 4000000)
+	x = m + n
+  m = n
+  n = x
 
-	if i <= 1:
-		j = i
-
-	else:
-		j = m+n
-		m = n
-		n = j
-	print(j)
+  if(x%2==0)
+    y = y + x
+print(y)
